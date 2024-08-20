@@ -28,6 +28,10 @@
 
                 <p class="nav__select">Travelers</p>
 
+                <!-- <select name="nav__select" id="nav__select" class="nav__select">
+                    <option value="travelers">Travelers</option>
+                </select> -->
+
                 <ul class="nav__collection" id="nav__collection">
                     <li><a href="#">Support</a></li>
 
@@ -83,18 +87,65 @@
                     
                     <div class="hero__head">
                         <ul>
-                            <li>Stays</li>
-                            <li>Flights</li>
-                            <li class="hero__selected">Cars</li>
-                            <li>Things to do</li>
+                            <li id="hero__stays">Stays</li>
+                            <li id="hero__flights">Flights</li>
+                            <li id="hero__cars" class="hero__selected">Cars</li>
+                            <li id="hero__things">Things to do</li>
                         </ul>
                     </div>
 
                     <div class="hero__body">
 
-                        <div class="hero__cars">
+                        <div class="hero__stays" id="hero__stays__body">
+                            
+                            <div class="hero__cards__btns">
+                                <button>Return to same location</button>
+                                <button>Return to same different location</button>
+                            </div>
 
-                            <div class="cars__btns">
+                            <div class="stays__main">
+
+                                <div class="stays__card">
+                                    <div class="stays__card__text">
+                                        <h2>Location</h2>
+                                        <p>Where are you going?</p>
+                                    </div>
+
+                                    <button>
+                                        <img src="./assets/search_icon.svg" alt="search">
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="hero__flights" id="hero__flights__body">
+                            
+                            <div class="hero__cards__btns">
+                                <button>Return to same location</button>
+                                <button>Return to same different location</button>
+                            </div>
+
+                            <div class="flights__main">
+
+                                <div class="flights__card">
+
+                                    <div class="flights__card__text">
+                                        <h2>Flights</h2>
+                                        <p>Where are you going?</p>
+                                    </div>
+
+                                    <button>
+                                        <img src="./assets/search_icon.svg" alt="search">
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="hero__cars" id="hero__cars__body">
+
+                            <div class="hero__cards__btns">
                                 <button>Return to same location</button>
                                 <button>Return to same different location</button>
                             </div>
@@ -133,11 +184,6 @@
                                         <p>10:00 AM</p>
                                     </div>
 
-                                    <div class="car__card__text car__card__text__mobile">
-                                        <h2>Location</h2>
-                                        <p>Where are you going?</p>
-                                    </div>
-
                                     <button>
                                         <img src="./assets/search_icon.svg" alt="search">
                                     </button>
@@ -146,6 +192,22 @@
                             </div>
                         </div>
 
+                        <div class="hero__things" id="hero__things__body">
+
+                            <div class="hero__cards__btns">
+                                <button>Return to same location</button>
+                                <button>Return to same different location</button>
+                            </div>
+
+                            <div class="cars__main">
+
+                                <div>
+                                    <h4>There's a more things to do</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum molestiae architecto voluptate ut laudantium illum asperiores expedita ipsam delectus libero facilis neque dignissimos maiores, ullam, doloremque a exercitationem, quisquam ratione cumque incidunt ex quae dicta pariatur! Nesciunt maxime repudiandae, ad a, deserunt dolor sapiente blanditiis adipisci expedita, eligendi quas impedit!</p>
+                                </div>
+
+                            </div>
+                        </div>
 
                     </div>
 
@@ -206,7 +268,51 @@
 
                     <div class="destination">
                         <div class="destination__img">
-                            <img src="./assets/destination3.png" alt="Milan">
+                            <img src="./assets/explore4.png" alt="Milan">
+                        </div>
+
+                        <div class="destination__text">
+                            <h3>Milan</h3>
+                            <p>Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+
+                    <div class="destination">
+                        <div class="destination__img">
+                            <img src="./assets/destination1.png" alt="Paris">
+                        </div>
+
+                        <div class="destination__text">
+                            <h3>Paris</h3>
+                            <p>Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+
+                    <div class="destination">
+                        <div class="destination__img">
+                            <img src="./assets/destination2.png" alt="London">
+                        </div>
+
+                        <div class="destination__text">
+                            <h3>London</h3>
+                            <p>Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+
+                    <div class="destination">
+                        <div class="destination__img">
+                            <img src="./assets/destination3.png" alt="Ams">
+                        </div>
+
+                        <div class="destination__text">
+                            <h3>Ams</h3>
+                            <p>Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+
+                    <div class="destination">
+                        <div class="destination__img">
+                            <img src="./assets/explore4.png" alt="Milan">
                         </div>
 
                         <div class="destination__text">
