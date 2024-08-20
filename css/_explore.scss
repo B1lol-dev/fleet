@@ -1,0 +1,178 @@
+.explore{
+
+    .container{
+
+        .explore__title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .explore__control{
+                display: flex;
+                gap: 8px;
+
+                button{
+                    background: transparent;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    color: $text_sc;
+                    border: 2px solid $gray_min;
+                    transition: .2s;
+                    
+                    &:hover{
+                        background: $gray_min;
+                    }
+
+                    &:active{
+                        background: transparent;
+                        border: 2px solid transparent;
+                    }
+                }
+            }
+        }
+
+        .explore__cards{
+            display: grid;
+            grid-template-columns: repeat(3 , 1fr);
+            justify-content: center;
+            grid-gap: 32px;
+            margin-top: 48px;
+
+            .explore__card{
+                padding-bottom: 10px;
+                justify-self: center;
+                
+                .explore__img{
+                    max-width: 352px;
+                    width: 100%;
+                    
+                    img{
+                        
+                    }
+                }
+
+                .explore__text{
+                    margin-top: 21px;
+
+                    h4{
+                        font-family: Poppins;
+                        font-size: 24px;
+                        font-weight: 600;
+                        line-height: 32px;
+                        text-align: left;
+                        cursor: pointer;
+                        color: $text_pr;
+                    }
+
+                    p{
+                        margin-top: 8px;
+                        font-family: Poppins;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        text-align: left;
+                        color: $text_sc;
+                    }
+                }
+            }
+        }
+
+        .explore__btn{
+            margin-top: 48px;
+            width: 162px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $text_sc;
+            border: 2px solid $gray_min;
+            background: transparent;
+            border-radius: 90px;
+            transition: .2s ease-in-out;
+
+            &:hover{
+                background: $gray_min;
+            }
+
+            &:active{
+                transform: scale(95%);
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1250px) {
+    .explore{
+        .container{
+            .explore__cards{
+                .explore__card{
+                    .explore__img{
+                        img{
+                            object-fit: cover;
+                            object-position: 0%;
+                            // width: 256px;
+                            // height: 256px;
+                            width: 100%;
+                            height: 352px;
+                            border-radius: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .explore{
+        .container{
+            .explore__cards{
+                .explore__card{
+                    .explore__img{
+                        img{
+                            object-fit: cover;
+                            object-position: 0%;
+                            width: 256px;
+                            height: 256px;
+                            border-radius: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .explore{
+        .container{
+            .explore__cards{
+                grid-template-columns: repeat(2 , 1fr);
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .explore{
+        .container{
+            .explore__cards{
+                grid-template-columns: 1fr;
+                .explore__card{
+                    .explore__img{
+                        img{
+                            object-fit: cover;
+                            object-position: 0%;
+                            width: 311px;
+                            height: unset;
+                            border-radius: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

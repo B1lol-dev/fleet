@@ -1,0 +1,150 @@
+.rent{
+    padding-bottom: 112px;
+
+    .container{
+        .rent__content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between !important;
+            .rent__text{
+                span{
+                    font-family: Poppins;
+                    font-size: 12px;
+                    font-weight: 700;
+                    line-height: 12px;
+                    text-align: left;
+                    color: $text_sc;
+                } 
+    
+                h4{
+                    font-size: 48px;
+                    font-weight: 700;
+                    line-height: 56px;
+                    letter-spacing: -0.02em;
+                    text-align: left;
+                    color: $text_pr;
+                    max-width: 448px;
+                    margin-block: 16px 32px;
+                }
+    
+                p{
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    text-align: left;
+                    color: $text_sc;
+                    max-width: 448px;
+                }
+    
+    
+                form{
+                    display: flex;
+                    position: relative;
+                    max-width: 300px;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 40px;
+    
+                    input{
+                        border: 2px solid $gray_min;
+                        padding: 14px 16px;
+                        border-radius: 90px;
+                        outline: none;
+                        width: 300px;
+                        font-size: 16px;
+    
+                        &::placeholder{
+                            color: $text_sc;
+                            font-size: 14px;
+                        }
+
+                        &:focus{
+                            border: 2px solid $bg_blue;
+                        }
+                    }
+    
+                    button{
+                        position: absolute;
+                        right: 8px;
+                        height: 32px;
+                        width: 32px;
+                        background: $bg_blue;
+                        color: $text_white;
+                        border-radius: 50%;
+                        transition: .2s ease-in-out;
+
+                        &:hover{
+                            background: $bg_white;
+                            outline: 1px solid $bg_blue;
+                            color: $bg_blue;
+                        }
+
+                        &:active{
+                            transform: scale(95%);
+                        }
+                    }
+                }
+            }
+            
+            .rent__img{
+                background: url(../assets/rent_mockup.png);
+                background-repeat: no-repeat !important;
+                background-size: cover;
+                width: 590px;
+                height: 605px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .rent{
+        .container{
+            .rent__content{
+                
+                .rent__img{
+                    background: url(../assets/rent_mockup_mobile.png);
+                    background-position: center;
+                    background-size: 94%;
+                    height: 520px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .rent{
+        .container{
+            .rent__content{
+                flex-direction: column;
+                gap: 48px;
+
+                .rent__img{
+                    margin: 0 auto;
+                    height: 445px;
+                    width: 343px;
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .rent{
+        .container{
+            .rent__content{
+                gap: 10px;
+
+                .rent__img{
+                    width: 100%;
+                    background-size: 100%;
+                }
+            }
+        }
+    }
+}

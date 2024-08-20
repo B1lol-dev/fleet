@@ -1,0 +1,359 @@
+.hero{
+    // position: relative;
+
+    .container__lg{
+        padding-inline: 15px;
+        .hero__lg{
+            background-image: url("../assets/hero.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height: 776px;
+            height: 100%;
+            border-radius: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // align-items: center;
+    
+            .hero__text{
+                height: 776px;
+                width: 100%;
+                background: linear-gradient(195.6deg, rgba(236, 248, 252, 0.84) 37.16%, rgba(236, 248, 252, 0.81453) 37.16%, rgba(236, 248, 252, 0) 67.78%);
+                border-radius: 24px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                h1{
+                    margin-top: 167px;
+                    font-size: 96px;
+                    font-weight: 700;
+                    line-height: 96px;
+                    letter-spacing: -0.02em;
+                    text-align: center;
+                    color: $text_pr;
+                }
+    
+                p{
+                    font-family: Poppins;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    letter-spacing: -0.02em;
+                    text-align: center;
+                    color: $text_pr;
+                    margin-top: 16px;
+                }
+    
+                button{
+                    margin-top: 24px;
+                    padding: 16px 24px;
+                    color: $text_white;
+                    background-color: $bg_blue;
+                    border-radius: 90px;
+                    transition: .2s ease-in-out;
+                    font-weight: 700;
+                    font-size: 16px;
+    
+                    &:hover{
+                        outline: 2px solid $bg_blue;
+                        background: $text_white;
+                        // background: transparent;
+                        color: $bg_blue;
+                    }
+    
+                    &:active{
+                        transform: scale(95%);
+                    }
+                }
+            }
+        }        
+    }
+    .container{
+
+        .hero__content{
+            height: 307px;
+            width: 100%;
+            box-shadow: 0px 40px 64px -32px #0F0F0F1A;
+            transform: translateY(-50%);
+            border-radius: 24px;
+            background: $bg_white;
+            padding: 40px;
+
+            .hero__head{
+                border-bottom: 1px solid $gray_min;
+
+                ul{
+                    display: flex;
+                    gap: 48px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 16px;
+                    text-align: center;
+                    color: $text_sc;
+
+                    li{
+                        padding-bottom: 30px;
+                        cursor: pointer;
+                        transition: .2s ease-in-out;
+
+                        &:hover{
+                            color: $bg_blue;
+                        }
+                    }
+
+                    .hero__selected{
+                        color: $text_pr;
+                        border-bottom: 1px solid $text_pr;
+
+                        &:hover{
+                            color: $text_pr;
+                        }
+                    }
+                }
+            }
+
+            .hero__body{
+
+                .hero__cars{
+
+                    .cars__btns{
+                        display: flex;
+                        gap: 16px;
+                        margin-top: 32px;
+
+                        button{
+                            padding: 12px 16px;
+                            transition: .2s ease-in-out;  
+                            font-size: 14px;
+                            font-weight: 700;
+                            border-radius: 90px;
+
+                            &:active{
+                                transform: scale(95%);
+                            }
+                            
+                            &:first-child{
+                                background: $bg_pr;
+                                color: $text_white;
+
+                                &:hover{
+                                    background: $text_white;
+                                    color: $text_pr;
+                                    outline: 1px solid $text_pr;
+                                }
+                            }
+
+                            &:last-child{
+                                color: $text_pr;
+                                background: $bg_white;
+                                border: 2px solid $gray_min;
+
+                                &:hover{
+                                    background: $gray_min;
+                                    border: 2px solid $gray_min;
+                                }
+                            }
+                        }
+                    }
+
+                    .cars__main{
+                        display: flex;
+                        margin-top: 12px;
+
+                        .car__card{
+                            padding: 20px;
+                            display: flex;
+                            max-width: 341px;
+                            width: 100%;
+                            align-items: center;
+
+                            .car__card__img{
+                                max-width: 32px;
+                                width: 100%;
+                                align-self: flex-start;
+
+                                img{
+                                    width: 100%;
+                                }
+                            }
+
+                            .car__card__text{
+                                margin-left: 12px;
+                                
+                                h2{
+                                    font-family: Poppins;
+                                    font-size: 24px;
+                                    font-weight: 600;
+                                    line-height: 32px;
+                                    text-align: left;
+                                    color: $text_pr;
+                                }
+
+                                p{
+                                    font-family: Poppins;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    text-align: left;
+                                    color: $text_sc;
+                                }
+                            }
+
+                            .car__card__text__mobile{
+                                display: none;
+                            }
+
+                            &:nth-child(3){
+                                position: relative;
+
+                                button{
+                                    width: 64px;
+                                    height: 64px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border-radius: 50%;
+                                    background: $bg_blue;
+                                    position: absolute;
+                                    right: 0;
+                                    transition: .2s ease-in-out;
+
+                                    &:active{
+                                        transform: scale(95%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .hero{
+
+        .container{
+    
+            .hero__content{
+    
+                .hero__body{
+    
+                    .hero__cars{
+    
+                        .cars__main{
+                            display: flex;
+                            margin-top: 12px;
+                            justify-content: space-between;
+    
+                            .car__card{
+    
+                                &:nth-child(2){
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
+
+@media (max-width: 750px) {
+    .hero{
+
+        .container__lg{
+            .hero__text{
+                padding-inline: 30px;
+            }
+    
+            
+        }
+
+        .container{
+    
+            .hero__content{
+    
+                .hero__head{
+                    ul{
+                        font-size: 14px;
+                        gap: 30px;
+                    }
+                }
+
+                .hero__body{
+    
+                    .hero__cars{
+    
+                        .cars__main{
+                            display: flex;
+                            margin-top: 12px;
+                            justify-content: space-between;
+    
+                            .car__card{
+                                max-width: unset;
+
+                                &:nth-child(1) , &:nth-child(2){
+                                    display: none;
+                                }
+
+                                .car__card__img{
+                                    display: none;
+                                }
+
+                                .car__card__text{
+                                    display: none;
+                                }
+
+                                .car__card__text__mobile{
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
+
+@media (max-width: 650px) {
+    .hero{
+
+        .container{
+            padding-inline: 23px;
+    
+            .hero__content{
+                height: unset;
+                padding: 20px;
+
+                .hero__head{
+                    ul{
+                        justify-content: center;
+                    }
+                }
+
+                .hero__body{
+                    
+                    .hero__cars{
+    
+                        .cars__btns{
+                            display: none;
+                        }
+
+                        .cars__main{
+                            .car__card{
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
