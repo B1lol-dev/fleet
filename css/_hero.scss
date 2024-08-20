@@ -116,9 +116,324 @@
 
             .hero__body{
 
+                .hero__stays{
+                    display: none;
+
+                    .hero__cards__btns{
+                        display: flex;
+                        gap: 16px;
+                        margin-top: 32px;
+
+                        button{
+                            padding: 12px 16px;
+                            transition: .2s ease-in-out;  
+                            font-size: 14px;
+                            font-weight: 700;
+                            border-radius: 90px;
+
+                            &:active{
+                                transform: scale(95%);
+                            }
+                            
+                            &:first-child{
+                                background: $bg_pr;
+                                color: $text_white;
+
+                                &:hover{
+                                    background: $text_white;
+                                    color: $text_pr;
+                                    outline: 1px solid $text_pr;
+                                }
+                            }
+
+                            &:last-child{
+                                color: $text_pr;
+                                background: $bg_white;
+                                border: 2px solid $gray_min;
+
+                                &:hover{
+                                    background: $gray_min;
+                                    border: 2px solid $gray_min;
+                                }
+                            }
+                        }
+                    }
+
+                    .stays__main{
+                        display: flex;
+                        margin-top: 12px;
+
+                        .stays__card{
+                            padding: 20px;
+                            display: flex;
+                            // max-width: 341px;
+                            width: 100%;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            .stays__card__text{
+                                margin-left: 12px;
+                                
+                                h2{
+                                    font-family: Poppins;
+                                    font-size: 24px;
+                                    font-weight: 600;
+                                    line-height: 32px;
+                                    text-align: left;
+                                    color: $text_pr;
+                                }
+
+                                p{
+                                    font-family: Poppins;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    text-align: left;
+                                    color: $text_sc;
+                                }
+                            }
+
+                            
+                            button{
+                                width: 64px;
+                                height: 64px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 50%;
+                                background: $bg_blue;
+                                // position: absolute;
+                                // right: 0;
+                                transition: .2s ease-in-out;
+
+                                &:hover{
+                                    opacity: 0.9;
+                                }
+
+                                &:active{
+                                    transform: scale(95%);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .hero__flights{
+                    display: none;
+
+                    .hero__cards__btns{
+                        display: flex;
+                        gap: 16px;
+                        margin-top: 32px;
+
+                        button{
+                            padding: 12px 16px;
+                            transition: .2s ease-in-out;  
+                            font-size: 14px;
+                            font-weight: 700;
+                            border-radius: 90px;
+
+                            &:active{
+                                transform: scale(95%);
+                            }
+                            
+                            &:first-child{
+                                background: $bg_pr;
+                                color: $text_white;
+
+                                &:hover{
+                                    background: $text_white;
+                                    color: $text_pr;
+                                    outline: 1px solid $text_pr;
+                                }
+                            }
+
+                            &:last-child{
+                                color: $text_pr;
+                                background: $bg_white;
+                                border: 2px solid $gray_min;
+
+                                &:hover{
+                                    background: $gray_min;
+                                    border: 2px solid $gray_min;
+                                }
+                            }
+                        }
+                    }
+
+                    .flights__main{
+                        display: flex;
+                        margin-top: 12px;
+
+                        .flights__card{
+                            padding: 20px;
+                            display: flex;
+                            width: 100%;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            .flights__card__text{
+                                margin-left: 12px;
+                                
+                                h2{
+                                    font-family: Poppins;
+                                    font-size: 24px;
+                                    font-weight: 600;
+                                    line-height: 32px;
+                                    text-align: left;
+                                    color: $text_pr;
+                                }
+
+                                p{
+                                    font-family: Poppins;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    text-align: left;
+                                    color: $text_sc;
+                                }
+                            }
+
+                            button{
+                                justify-self: flex-end;
+                                width: 64px;
+                                height: 64px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 50%;
+                                background: $bg_blue;
+                                transition: .2s ease-in-out;
+
+                                &:hover{
+                                    opacity: 0.9;
+                                }
+
+                                &:active{
+                                    transform: scale(95%);
+                                }
+                            }
+                        }
+                    }
+                }
+
                 .hero__cars{
 
-                    .cars__btns{
+                    .hero__cards__btns{
+                        display: flex;
+                        gap: 16px;
+                        margin-top: 32px;
+
+                        button{
+                            padding: 12px 16px;
+                            transition: .2s ease-in-out;  
+                            font-size: 14px;
+                            font-weight: 700;
+                            border-radius: 90px;
+
+                            &:active{
+                                transform: scale(95%);
+                            }
+                            
+                            &:first-child{
+                                background: $bg_pr;
+                                color: $text_white;
+
+                                &:hover{
+                                    background: $text_white;
+                                    color: $text_pr;
+                                    outline: 1px solid $text_pr;
+                                }
+                            }
+
+                            &:last-child{
+                                color: $text_pr;
+                                background: $bg_white;
+                                border: 2px solid $gray_min;
+
+                                &:hover{
+                                    background: $gray_min;
+                                    border: 2px solid $gray_min;
+                                }
+                            }
+                        }
+                    }
+
+                    .cars__main{
+                        display: flex;
+                        margin-top: 12px;
+
+                        .car__card{
+                            padding: 20px;
+                            display: flex;
+                            max-width: 341px;
+                            width: 100%;
+                            align-items: center;
+
+                            .car__card__img{
+                                max-width: 32px;
+                                width: 100%;
+                                align-self: flex-start;
+
+                                img{
+                                    width: 100%;
+                                }
+                            }
+
+                            .car__card__text{
+                                margin-left: 12px;
+                                
+                                h2{
+                                    font-family: Poppins;
+                                    font-size: 24px;
+                                    font-weight: 600;
+                                    line-height: 32px;
+                                    text-align: left;
+                                    color: $text_pr;
+                                }
+
+                                p{
+                                    font-family: Poppins;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    text-align: left;
+                                    color: $text_sc;
+                                }
+                            }
+
+                            &:nth-child(3){
+                                position: relative;
+
+                                button{
+                                    width: 64px;
+                                    height: 64px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border-radius: 50%;
+                                    background: $bg_blue;
+                                    position: absolute;
+                                    right: 0;
+                                    transition: .2s ease-in-out;
+
+                                    &:hover{
+                                        opacity: 0.9;
+                                    }
+
+                                    &:active{
+                                        transform: scale(95%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .hero__things{
+                    display: none;
+
+                    .hero__cards__btns{
                         display: flex;
                         gap: 16px;
                         margin-top: 32px;
@@ -220,6 +535,10 @@
                                     right: 0;
                                     transition: .2s ease-in-out;
 
+                                    &:hover{
+                                        opacity: 0.9;
+                                    }
+
                                     &:active{
                                         transform: scale(95%);
                                     }
@@ -298,20 +617,16 @@
                             .car__card{
                                 max-width: unset;
 
-                                &:nth-child(1) , &:nth-child(2){
+                                &:nth-child(2){
                                     display: none;
                                 }
 
-                                .car__card__img{
-                                    display: none;
-                                }
+                                &:nth-child(3){
+                                    width: unset;
 
-                                .car__card__text{
-                                    display: none;
-                                }
-
-                                .car__card__text__mobile{
-                                    display: block;
+                                    .car__card__img , .car__card__text{
+                                        display: none;
+                                    }
                                 }
                             }
                         }
@@ -323,6 +638,20 @@
 }
 
 @media (max-width: 650px) {
+    .hero__cards__btns{
+        display: none !important;
+    }
+
+    .hero__stays{
+
+    }
+
+    .cars__main{
+        .car__card{
+            padding: 0;
+        }
+    }
+
     .hero{
 
         .container{
@@ -335,22 +664,6 @@
                 .hero__head{
                     ul{
                         justify-content: center;
-                    }
-                }
-
-                .hero__body{
-                    
-                    .hero__cars{
-    
-                        .cars__btns{
-                            display: none;
-                        }
-
-                        .cars__main{
-                            .car__card{
-                                padding: 0;
-                            }
-                        }
                     }
                 }
             }
