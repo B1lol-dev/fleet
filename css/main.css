@@ -332,36 +332,201 @@ header .container .navbar .nav__items .nav__burger img {
 .hero .container .hero__content .hero__head ul .hero__selected:hover {
   color: #23262F;
 }
-.hero .container .hero__content .hero__body .hero__cars .cars__btns {
+.hero .container .hero__content .hero__body .hero__stays {
+  display: none;
+}
+.hero .container .hero__content .hero__body .hero__stays .hero__cards__btns {
   display: flex;
   gap: 16px;
   margin-top: 32px;
 }
-.hero .container .hero__content .hero__body .hero__cars .cars__btns button {
+.hero .container .hero__content .hero__body .hero__stays .hero__cards__btns button {
   padding: 12px 16px;
   transition: 0.2s ease-in-out;
   font-size: 14px;
   font-weight: 700;
   border-radius: 90px;
 }
-.hero .container .hero__content .hero__body .hero__cars .cars__btns button:active {
+.hero .container .hero__content .hero__body .hero__stays .hero__cards__btns button:active {
   transform: scale(95%);
 }
-.hero .container .hero__content .hero__body .hero__cars .cars__btns button:first-child {
+.hero .container .hero__content .hero__body .hero__stays .hero__cards__btns button:first-child {
   background: #23262F;
   color: #FCFCFD;
 }
-.hero .container .hero__content .hero__body .hero__cars .cars__btns button:first-child:hover {
+.hero .container .hero__content .hero__body .hero__stays .hero__cards__btns button:first-child:hover {
   background: #FCFCFD;
   color: #23262F;
   outline: 1px solid #23262F;
 }
-.hero .container .hero__content .hero__body .hero__cars .cars__btns button:last-child {
+.hero .container .hero__content .hero__body .hero__stays .hero__cards__btns button:last-child {
   color: #23262F;
   background: #FCFCFD;
   border: 2px solid #E6E8EC;
 }
-.hero .container .hero__content .hero__body .hero__cars .cars__btns button:last-child:hover {
+.hero .container .hero__content .hero__body .hero__stays .hero__cards__btns button:last-child:hover {
+  background: #E6E8EC;
+  border: 2px solid #E6E8EC;
+}
+.hero .container .hero__content .hero__body .hero__stays .stays__main {
+  display: flex;
+  margin-top: 12px;
+}
+.hero .container .hero__content .hero__body .hero__stays .stays__main .stays__card {
+  padding: 20px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero .container .hero__content .hero__body .hero__stays .stays__main .stays__card .stays__card__text {
+  margin-left: 12px;
+}
+.hero .container .hero__content .hero__body .hero__stays .stays__main .stays__card .stays__card__text h2 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  color: #23262F;
+}
+.hero .container .hero__content .hero__body .hero__stays .stays__main .stays__card .stays__card__text p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #777E90;
+}
+.hero .container .hero__content .hero__body .hero__stays .stays__main .stays__card button {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #3B71FE;
+  transition: 0.2s ease-in-out;
+}
+.hero .container .hero__content .hero__body .hero__stays .stays__main .stays__card button:hover {
+  opacity: 0.9;
+}
+.hero .container .hero__content .hero__body .hero__stays .stays__main .stays__card button:active {
+  transform: scale(95%);
+}
+.hero .container .hero__content .hero__body .hero__flights {
+  display: none;
+}
+.hero .container .hero__content .hero__body .hero__flights .hero__cards__btns {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+.hero .container .hero__content .hero__body .hero__flights .hero__cards__btns button {
+  padding: 12px 16px;
+  transition: 0.2s ease-in-out;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 90px;
+}
+.hero .container .hero__content .hero__body .hero__flights .hero__cards__btns button:active {
+  transform: scale(95%);
+}
+.hero .container .hero__content .hero__body .hero__flights .hero__cards__btns button:first-child {
+  background: #23262F;
+  color: #FCFCFD;
+}
+.hero .container .hero__content .hero__body .hero__flights .hero__cards__btns button:first-child:hover {
+  background: #FCFCFD;
+  color: #23262F;
+  outline: 1px solid #23262F;
+}
+.hero .container .hero__content .hero__body .hero__flights .hero__cards__btns button:last-child {
+  color: #23262F;
+  background: #FCFCFD;
+  border: 2px solid #E6E8EC;
+}
+.hero .container .hero__content .hero__body .hero__flights .hero__cards__btns button:last-child:hover {
+  background: #E6E8EC;
+  border: 2px solid #E6E8EC;
+}
+.hero .container .hero__content .hero__body .hero__flights .flights__main {
+  display: flex;
+  margin-top: 12px;
+}
+.hero .container .hero__content .hero__body .hero__flights .flights__main .flights__card {
+  padding: 20px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero .container .hero__content .hero__body .hero__flights .flights__main .flights__card .flights__card__text {
+  margin-left: 12px;
+}
+.hero .container .hero__content .hero__body .hero__flights .flights__main .flights__card .flights__card__text h2 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  color: #23262F;
+}
+.hero .container .hero__content .hero__body .hero__flights .flights__main .flights__card .flights__card__text p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #777E90;
+}
+.hero .container .hero__content .hero__body .hero__flights .flights__main .flights__card button {
+  justify-self: flex-end;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #3B71FE;
+  transition: 0.2s ease-in-out;
+}
+.hero .container .hero__content .hero__body .hero__flights .flights__main .flights__card button:hover {
+  opacity: 0.9;
+}
+.hero .container .hero__content .hero__body .hero__flights .flights__main .flights__card button:active {
+  transform: scale(95%);
+}
+.hero .container .hero__content .hero__body .hero__cars .hero__cards__btns {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+.hero .container .hero__content .hero__body .hero__cars .hero__cards__btns button {
+  padding: 12px 16px;
+  transition: 0.2s ease-in-out;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 90px;
+}
+.hero .container .hero__content .hero__body .hero__cars .hero__cards__btns button:active {
+  transform: scale(95%);
+}
+.hero .container .hero__content .hero__body .hero__cars .hero__cards__btns button:first-child {
+  background: #23262F;
+  color: #FCFCFD;
+}
+.hero .container .hero__content .hero__body .hero__cars .hero__cards__btns button:first-child:hover {
+  background: #FCFCFD;
+  color: #23262F;
+  outline: 1px solid #23262F;
+}
+.hero .container .hero__content .hero__body .hero__cars .hero__cards__btns button:last-child {
+  color: #23262F;
+  background: #FCFCFD;
+  border: 2px solid #E6E8EC;
+}
+.hero .container .hero__content .hero__body .hero__cars .hero__cards__btns button:last-child:hover {
   background: #E6E8EC;
   border: 2px solid #E6E8EC;
 }
@@ -403,9 +568,6 @@ header .container .navbar .nav__items .nav__burger img {
   text-align: left;
   color: #777E90;
 }
-.hero .container .hero__content .hero__body .hero__cars .cars__main .car__card .car__card__text__mobile {
-  display: none;
-}
 .hero .container .hero__content .hero__body .hero__cars .cars__main .car__card:nth-child(3) {
   position: relative;
 }
@@ -421,7 +583,108 @@ header .container .navbar .nav__items .nav__burger img {
   right: 0;
   transition: 0.2s ease-in-out;
 }
+.hero .container .hero__content .hero__body .hero__cars .cars__main .car__card:nth-child(3) button:hover {
+  opacity: 0.9;
+}
 .hero .container .hero__content .hero__body .hero__cars .cars__main .car__card:nth-child(3) button:active {
+  transform: scale(95%);
+}
+.hero .container .hero__content .hero__body .hero__things {
+  display: none;
+}
+.hero .container .hero__content .hero__body .hero__things .hero__cards__btns {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+.hero .container .hero__content .hero__body .hero__things .hero__cards__btns button {
+  padding: 12px 16px;
+  transition: 0.2s ease-in-out;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 90px;
+}
+.hero .container .hero__content .hero__body .hero__things .hero__cards__btns button:active {
+  transform: scale(95%);
+}
+.hero .container .hero__content .hero__body .hero__things .hero__cards__btns button:first-child {
+  background: #23262F;
+  color: #FCFCFD;
+}
+.hero .container .hero__content .hero__body .hero__things .hero__cards__btns button:first-child:hover {
+  background: #FCFCFD;
+  color: #23262F;
+  outline: 1px solid #23262F;
+}
+.hero .container .hero__content .hero__body .hero__things .hero__cards__btns button:last-child {
+  color: #23262F;
+  background: #FCFCFD;
+  border: 2px solid #E6E8EC;
+}
+.hero .container .hero__content .hero__body .hero__things .hero__cards__btns button:last-child:hover {
+  background: #E6E8EC;
+  border: 2px solid #E6E8EC;
+}
+.hero .container .hero__content .hero__body .hero__things .cars__main {
+  display: flex;
+  margin-top: 12px;
+}
+.hero .container .hero__content .hero__body .hero__things .cars__main .car__card {
+  padding: 20px;
+  display: flex;
+  max-width: 341px;
+  width: 100%;
+  align-items: center;
+}
+.hero .container .hero__content .hero__body .hero__things .cars__main .car__card .car__card__img {
+  max-width: 32px;
+  width: 100%;
+  align-self: flex-start;
+}
+.hero .container .hero__content .hero__body .hero__things .cars__main .car__card .car__card__img img {
+  width: 100%;
+}
+.hero .container .hero__content .hero__body .hero__things .cars__main .car__card .car__card__text {
+  margin-left: 12px;
+}
+.hero .container .hero__content .hero__body .hero__things .cars__main .car__card .car__card__text h2 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  color: #23262F;
+}
+.hero .container .hero__content .hero__body .hero__things .cars__main .car__card .car__card__text p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #777E90;
+}
+.hero .container .hero__content .hero__body .hero__things .cars__main .car__card .car__card__text__mobile {
+  display: none;
+}
+.hero .container .hero__content .hero__body .hero__things .cars__main .car__card:nth-child(3) {
+  position: relative;
+}
+.hero .container .hero__content .hero__body .hero__things .cars__main .car__card:nth-child(3) button {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #3B71FE;
+  position: absolute;
+  right: 0;
+  transition: 0.2s ease-in-out;
+}
+.hero .container .hero__content .hero__body .hero__things .cars__main .car__card:nth-child(3) button:hover {
+  opacity: 0.9;
+}
+.hero .container .hero__content .hero__body .hero__things .cars__main .car__card:nth-child(3) button:active {
   transform: scale(95%);
 }
 
@@ -451,20 +714,23 @@ header .container .navbar .nav__items .nav__burger img {
   .hero .container .hero__content .hero__body .hero__cars .cars__main .car__card {
     max-width: unset;
   }
-  .hero .container .hero__content .hero__body .hero__cars .cars__main .car__card:nth-child(1), .hero .container .hero__content .hero__body .hero__cars .cars__main .car__card:nth-child(2) {
+  .hero .container .hero__content .hero__body .hero__cars .cars__main .car__card:nth-child(2) {
     display: none;
   }
-  .hero .container .hero__content .hero__body .hero__cars .cars__main .car__card .car__card__img {
-    display: none;
+  .hero .container .hero__content .hero__body .hero__cars .cars__main .car__card:nth-child(3) {
+    width: unset;
   }
-  .hero .container .hero__content .hero__body .hero__cars .cars__main .car__card .car__card__text {
+  .hero .container .hero__content .hero__body .hero__cars .cars__main .car__card:nth-child(3) .car__card__img, .hero .container .hero__content .hero__body .hero__cars .cars__main .car__card:nth-child(3) .car__card__text {
     display: none;
-  }
-  .hero .container .hero__content .hero__body .hero__cars .cars__main .car__card .car__card__text__mobile {
-    display: block;
   }
 }
 @media (max-width: 650px) {
+  .hero__cards__btns {
+    display: none !important;
+  }
+  .cars__main .car__card {
+    padding: 0;
+  }
   .hero .container {
     padding-inline: 23px;
   }
@@ -474,12 +740,6 @@ header .container .navbar .nav__items .nav__burger img {
   }
   .hero .container .hero__content .hero__head ul {
     justify-content: center;
-  }
-  .hero .container .hero__content .hero__body .hero__cars .cars__btns {
-    display: none;
-  }
-  .hero .container .hero__content .hero__body .hero__cars .cars__main .car__card {
-    padding: 0;
   }
 }
 .destinations {
